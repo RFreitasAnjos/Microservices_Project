@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SalesService</name>
+    </assembly>
+    <members>
+        <member name="T:SalesService.Controllers.OrdersController">
+            <summary>
+            Endpoints para criação e consulta de pedidos.
+            </summary>
+        </member>
+        <member name="M:SalesService.Controllers.OrdersController.Create(SalesService.DTOs.OrderDTO.CreateOrderRequest,System.Threading.CancellationToken)">
+            <summary>
+            Cria um novo pedido validando estoque no StockService (sincrônico).
+            </summary>
+            <param name="request">Itens do pedido.</param>
+            <response code="201">Pedido criado com sucesso.</response>
+            <response code="400">Requisição inválida.</response>
+            <response code="422">Falha de negócio (ex.: estoque insuficiente).</response>
+        </member>
+        <member name="M:SalesService.Controllers.OrdersController.GetById(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Retorna um pedido pelo ID.
+            </summary>
+        </member>
+        <member name="M:SalesService.Controllers.OrdersController.GetAll(System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Lista pedidos paginados.
+            </summary>
+            <param name="page">Página (>=1)</param>
+            <param name="pageSize">Itens por página (1-100)</param>
+        </member>
+        <member name="P:SalesService.DTOs.OrderDTO.CreateOrderItem.ProductId">
+            <summary>
+             ID do produto no StockService e sua quantidade
+            </summary>
+        </member>
+        <member name="T:SalesService.Migrations.InitialCreate_Sales">
+            <inheritdoc />
+        </member>
+        <member name="M:SalesService.Migrations.InitialCreate_Sales.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:SalesService.Migrations.InitialCreate_Sales.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:SalesService.Migrations.InitialCreate_Sales.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

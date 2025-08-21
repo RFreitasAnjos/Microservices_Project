@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StockService</name>
+    </assembly>
+    <members>
+        <member name="T:StockService.Migrations.InitalCreate_Sales">
+            <inheritdoc />
+        </member>
+        <member name="M:StockService.Migrations.InitalCreate_Sales.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StockService.Migrations.InitalCreate_Sales.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StockService.Migrations.InitalCreate_Sales.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
