@@ -1,0 +1,6 @@
+@Educational_Victoria_HostAddress = http://localhost:5199
+
+GET {{Educational_Victoria_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
